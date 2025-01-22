@@ -18,7 +18,7 @@ npm run build:tsc
 
 # Example Usages
 
--   (Sample App Usage)[https://github.com/danieliser/sample-typescript-wordpress-data-store/blob/main/src/sample-usage/sample-1.tsx]
--   (Thunk Actions)[https://github.com/danieliser/sample-typescript-wordpress-data-store/blob/main/src/custom-store/actions.ts]
--   (Selectors)[https://github.com/danieliser/sample-typescript-wordpress-data-store/blob/main/src/custom-store/selectors.ts]
--   (Store)[https://github.com/danieliser/sample-typescript-wordpress-data-store/blob/main/src/custom-store/store.ts]
+-   [Sample App Usage](https://github.com/danieliser/sample-typescript-wordpress-data-store/blob/main/src/sample-usage/sample-1.tsx)
+-   [Thunk Actions](https://github.com/danieliser/sample-typescript-wordpress-data-store/blob/main/src/custom-store/actions.ts)
+-   [Selectors](https://github.com/danieliser/sample-typescript-wordpress-data-store/blob/main/src/custom-store/selectors.ts)
+-   [Store](https://github.com/danieliser/sample-typescript-wordpress-data-store/blob/main/src/custom-store/store.ts)
