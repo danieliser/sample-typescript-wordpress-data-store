@@ -9,7 +9,7 @@ import type { MyThunkAction } from './types';
 const { EDITOR_CHANGE_ID } = ACTION_TYPES;
 
 export const otherAction =
-	(): MyThunkAction< void > =>
+	(): MyThunkAction =>
 	( { select } ) => {
 		const test = select.getEditorId();
 

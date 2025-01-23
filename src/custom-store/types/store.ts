@@ -67,6 +67,6 @@ export type MyThunkContext = StoreThunkContext< MyStoreDescriptor >;
 /**
  * 9) Finally, define the ThunkAction shape.
  */
-export type MyThunkAction< R > = (
+export type MyThunkAction< R = void > = (
 	context: MyThunkContext
 ) => Promise< R > | R;
