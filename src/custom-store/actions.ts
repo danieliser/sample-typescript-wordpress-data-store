@@ -3,7 +3,7 @@ import { store as coreDataStore } from '@wordpress/core-data';
 
 import { ACTION_TYPES } from './constants';
 
-import type { EditorId } from './reducer';
+import type { EditorId, ReducerAction } from './reducer';
 import type { MyThunkAction } from './types';
 
 const { EDITOR_CHANGE_ID } = ACTION_TYPES;
@@ -25,14 +25,13 @@ export const otherAction =
  * @returns The thunk action.
  */
 export const sampleAction =
-	( editorId: EditorId ): MyThunkAction< void > =>
+	( editorId: EditorId ): MyThunkAction =>
 	async ( { select, dispatch, resolveSelect, registry } ) => {
 		if ( typeof editorId === 'undefined' ) {
 			dispatch( {
 				type: EDITOR_CHANGE_ID,
 				editorId: undefined,
-				editorValues: undefined,
-			} );
+			} as ReducerAction );
 			return;
 		}
 
@@ -40,7 +39,7 @@ export const sampleAction =
 		dispatch( {
 			type: EDITOR_CHANGE_ID,
 			editorId,
-		} );
+		} as ReducerAction );
 
 		// Internal Selectors.
 		const test1 = select.getEditorId();
@@ -52,7 +51,7 @@ export const sampleAction =
 		const test4 = dispatch( {
 			type: EDITOR_CHANGE_ID,
 			editorId,
-		} );
+		} as ReducerAction );
 
 		const test6 = dispatch.otherAction();
 

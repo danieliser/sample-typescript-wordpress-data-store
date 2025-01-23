@@ -6,11 +6,15 @@ import type { MyCustomType } from './types';
  */
 export const STORE_NAME = 'my/custom-store';
 
+export const EDITOR_CHANGE_ID = 'EDITOR_CHANGE_ID';
+
 /**
  * The action types for the store.
  */
-export const ACTION_TYPES = {
-	EDITOR_CHANGE_ID: 'EDITOR_CHANGE_ID',
+export const ACTION_TYPES: {
+	EDITOR_CHANGE_ID: typeof EDITOR_CHANGE_ID;
+} = {
+	EDITOR_CHANGE_ID,
 };
 
 /**

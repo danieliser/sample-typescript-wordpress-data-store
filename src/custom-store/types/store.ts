@@ -24,6 +24,11 @@ export type MyStoreState = ReturnType< typeof reducer >;
 export type MyStoreActions = typeof actions;
 
 /**
+ * Export the action names.
+ */
+export type StoreActionNames = keyof MyStoreActions;
+
+/**
  * 3) Selectors object is `typeof selectors` (your `./selectors.ts`).
  */
 export type MyStoreSelectors = typeof selectors;
